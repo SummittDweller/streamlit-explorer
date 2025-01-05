@@ -132,8 +132,8 @@ def generate_folder_links(folder_path):
             f'{LIST_STYLE}<font color="{COLOR_2}">{symbol}</font> {file["name"]}'
             f"</a>")
 
-    st.session_state["subdirs"] = "<br>".join(folder_list or [ ])
-    st.session_state["files"] = "<br>".join(files_list or [ ])
+    st.session_state["subdirs"] = "&nbsp;<br>&nbsp;".join(folder_list or [ ])
+    st.session_state["files"] = "&nbsp;<br>&nbsp;".join(files_list or [ ])
 
 
 def update_paths( ):
